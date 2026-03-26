@@ -1,0 +1,46 @@
+/* ===== FORMULARIO CONTACTO ===== */
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, 
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botones */
+form input[type="submit"],
+form input[type="reset"] {
+    width: 48%;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Botón enviar */
+form input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Botón reset */
+form input[type="reset"] {
+    background-color: #dc3545;
+    color: white;
+}
