@@ -1,64 +1,46 @@
-/* Estilo general */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f4f4f9;
-  color: #333;
+/* ===== FORMULARIO CONTACTO ===== */
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
 }
 
-/* Header */
-header {
-  background: linear-gradient(90deg, #0077b6, #00b4d8);
-  color: white;
-  text-align: center;
-  padding: 20px 0;
+form label {
+    font-weight: bold;
 }
 
-/* Navegación */
-nav {
-  background-color: #023e8a;
-}
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-nav ul li {
-  margin: 0 15px;
-}
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-nav ul li a:hover {
-  color: #90e0ef;
+form input, 
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-/* Main */
-main {
-  padding: 20px;
-}
-section {
-  margin-bottom: 30px;
-}
-section h2 {
-  color: #0077b6;
+/* Botones */
+form input[type="submit"],
+form input[type="reset"] {
+    width: 48%;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-/* Footer */
-footer {
-  background-color: #03045e;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
+/* Botón enviar */
+form input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
 }
-footer a {
-  color: #90e0ef;
-  text-decoration: none;
-}
-footer a:hover {
-  text-decoration: underline;
+
+/* Botón reset */
+form input[type="reset"] {
+    background-color: #dc3545;
+    color: white;
 }
