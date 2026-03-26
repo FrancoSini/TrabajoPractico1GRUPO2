@@ -56,6 +56,11 @@ section h2 {
   height: auto;        
   border-radius: 10px; 
 }
+/* Centrar contenido de Quienes Somos y Misión */
+#quienes-somos,
+#mision {
+  text-align: center;  
+}
 
 /* Footer */
 footer {
