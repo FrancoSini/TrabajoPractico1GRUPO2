@@ -27,3 +27,106 @@
 .card-description {
     text-align:justify;
 }
+/* header */
+header {
+  background: linear-gradient(90deg, #0077b6, #00b4d8);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  overflow: hidden; 
+  display: flex;              
+  flex-direction: column;     
+  align-items: center;        
+  justify-content: center; 
+}
+
+.scroll-title {
+  display: inline-block;
+  white-space: nowrap;      
+  animation: scroll-title 12s linear infinite;
+}
+
+@keyframes scroll-title {
+  from {
+    transform: translateX(100%);  
+  }
+  to {
+    transform: translateX(-100%);  
+  }
+}
+
+/* Navegación */
+nav {
+  background-color: #023e8a;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 28px;
+}
+nav ul li a:hover {
+  color: #90e0ef;
+}
+
+/* Main */
+main {
+  padding: 20px;
+}
+section {
+  margin-bottom: 30px;
+}
+section h2 {
+  color: yellow;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* Imagen en la sección Quienes Somos */
+#quienes-somos img {
+  display: block;      
+  margin: 0 auto;      
+  max-width: 100%;     
+  height: auto;        
+  border-radius: 10px; 
+}
+/* Centrar contenido de Quienes Somos y Misión */
+#quienes-somos,
+#mision {
+  text-align: center;  
+}
+/* Estilo general */
+body {
+   background-image: url("../assets/img/foto3.png");
+   background-size: cover; 
+   background-position: center;
+   color: yellow;
+   font-weight: bold;
+   font-size: 21px;    
+}
+/* Footer */
+footer {
+  background-color: #03045e;
+  color: white;
+  font-size:15px;
+  text-align: center;
+  padding: 15px 0;
+}
+footer a {
+  color: #90e0ef;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
