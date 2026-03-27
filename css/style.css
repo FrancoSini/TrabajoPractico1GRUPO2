@@ -24,6 +24,7 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: 28px;
 }
 nav ul li a:hover {
   color: #90e0ef;
@@ -37,7 +38,9 @@ section {
   margin-bottom: 30px;
 }
 section h2 {
-  color: #0077b6;
+  color: yellow;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 /* Imagen en la sección Quienes Somos */
@@ -53,11 +56,20 @@ section h2 {
 #mision {
   text-align: center;  
 }
-
+/* Estilo general */
+body {
+   background-image: url("../assets/img/foto3.png");
+   background-size: cover; 
+   background-position: center;
+   color: yellow;
+   font-weight: bold;
+   font-size: 21px;    
+}
 /* Footer */
 footer {
   background-color: #03045e;
   color: white;
+  font-size:15px;
   text-align: center;
   padding: 15px 0;
 }
@@ -69,7 +81,3 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Estilo general */
-body {
-   background-image: url("../assets/img/foto2.png");
-}
