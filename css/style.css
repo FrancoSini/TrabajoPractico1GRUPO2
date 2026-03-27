@@ -1,0 +1,28 @@
+/* pagina de servicios */
+
+#contenedor {
+    text-align: center;
+    width: 100%;
+}
+.card {
+    display: flex;
+    width: 30%;
+    min-height:300px;
+    vertical-align: top;
+    border: 2px solid black;
+    border-radius:8px;
+    padding:20 px 0;
+    background-color: #0434B2;
+}
+.card-img{
+    border-radius:100%;
+    width:120px;
+    height:120px;
+}
+.card-valor{
+    text-align:center;
+    text-decoration:underline;
+}
+.card-description {
+    text-align:justify;
+}
