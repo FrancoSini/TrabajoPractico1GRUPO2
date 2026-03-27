@@ -1,9 +1,29 @@
-/*header */
+/* header */
 header {
   background: linear-gradient(90deg, #0077b6, #00b4d8);
   color: white;
   text-align: center;
   padding: 20px 0;
+  overflow: hidden; 
+  display: flex;              
+  flex-direction: column;     
+  align-items: center;        
+  justify-content: center; 
+}
+
+.scroll-title {
+  display: inline-block;
+  white-space: nowrap;      
+  animation: scroll-title 12s linear infinite;
+}
+
+@keyframes scroll-title {
+  from {
+    transform: translateX(100%);  
+  }
+  to {
+    transform: translateX(-100%);  
+  }
 }
 
 /* Navegación */
