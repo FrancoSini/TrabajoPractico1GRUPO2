@@ -1,13 +1,4 @@
-/* Estilo general */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: url("assets/img/foto2.png") no-repeat center center fixed;
-  background-size: cover;
-  color: #333;
-}
-
-/* Header */
+/*header */
 header {
   background: linear-gradient(90deg, #0077b6, #00b4d8);
   color: white;
@@ -76,4 +67,9 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Estilo general */
+body {
+   background-image: url("../assets/img/foto2.png");
 }
