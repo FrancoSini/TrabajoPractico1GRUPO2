@@ -1,46 +1,92 @@
-/* ===== FORMULARIO CONTACTO ===== */
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background-color: #1e1e2f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* NAV */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #007BFF;
+    border-radius: 5px;
+}
+
+/* MAIN */
+main {
+    padding: 20px;
+}
+
+/* FORMULARIO */
 form {
     max-width: 500px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    background: white;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-form label {
-    font-weight: bold;
-}
-
-form input, 
+form input,
 form textarea {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Botones */
-form input[type="submit"],
-form input[type="reset"] {
-    width: 48%;
-    cursor: pointer;
-    border: none;
     padding: 10px;
+    margin: 10px 0;
     border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-/* Botón enviar */
 form input[type="submit"] {
     background-color: #007BFF;
     color: white;
+    border: none;
 }
 
-/* Botón reset */
 form input[type="reset"] {
     background-color: #dc3545;
     color: white;
+    border: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1e1e2f;
+    color: white;
+    margin-top: 20px;
 }
