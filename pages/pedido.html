@@ -32,23 +32,34 @@
             <h2>Formulario para solicitar un servicio</h2>
 
             <form>
-
-                <label for="nombre">Ingrese el tipo de servicio que solicita:</label><br>
+                <label for="nombre">Nombre completo:</label><br>
                 <input type="text" id="nombre" name="nombre" required>
                 <br><br>
-<!--  
-                <label for="apellido">Apellido:</label><br>
-                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="telefono">Número de teléfono:</label><br>
+                <input type="text" id="telefono" name="telefono" required>
                 <br><br>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required>
+                <label for="servicio">Ingrese el tipo de servicio que solicita:</label><br>                             
+                <select name="opciones" id="opciones">
+                    <option value="opcion1">Mantenimiento</option>
+                    <option value="opcion2">Desarrollo y transformación digital</option>
+                    <option value="opcion3">Consultoria</option>
+                </select>  
                 <br><br>
 
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea>
+                <label for="fecha">Selecciona la fecha estimativa en que desea el servicio:</label>
+                <input type="date" id="fecha" name="fecha">
                 <br><br>
--->
+
+
+
+                <label for="especificaciones">Especificaciones:</label><br>
+                <input type="text" id="especificaciones" name="especificaciones" required>
+                <br><br>
+
+
+
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpiar">
 
