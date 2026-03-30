@@ -1,113 +1,96 @@
-/* equipo.css */
 
-/* Título principal */
-h1 {
-  text-align: center;
-  margin: 30px 0;
-  color: yellow;
-  font-size: 32px;
-  text-decoration: underline;
+
+/* Título principal de la sección */
+.equipo-titulo {
+    text-align: center;
+    color: yellow;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 40px 0 30px 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
-/* Contenedor del equipo */
-/* Contenedor del equipo */
+/* Contenedor principal de tarjetas */
 .equipo-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 40px 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Tarjeta de cada integrante */
+/* Tarjeta individual de integrante */
 .integrante {
-  background-color: #ffffff;
-  border: 2px solid black;
-  border-radius: 8px;
-  width: 250px;
-  min-height: 300px;
-  text-align: center;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(2, 62, 138, 0.85); /* azul marino semitransparente = coherente con nav */
+    border: 2px solid #00b4d8;                /* azul claro = coherente con header */
+    border-radius: 12px;
+    padding: 30px 25px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
+/* Efecto hover en la tarjeta */
 .integrante:hover {
-  transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 180, 216, 0.5);
+    border-color: yellow;
 }
 
-/* Imagen circular */
+/* Foto del integrante */
 .integrante img {
-  border-radius: 100%;
-  width: 120px;
-  height: 120px;
-  margin-bottom: 15px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #00b4d8;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
 }
 
-/* Nombre y rol */
+.integrante:hover img {
+    border-color: yellow;
+}
+
+/* Nombre del integrante */
 .integrante h2 {
-  font-size: 22px;
-  color: #0077b6;
-  margin: 10px 0;
+    color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
+/* Rol / cargo */
 .integrante p {
-  font-size: 18px;
-  color: #03045e;
-}
-/* equipo.css */
-
-/* Título principal de la sección Equipo */
-h1 {
-  text-align: center;
-  margin: 30px 0;
-  color: yellow;
-  font-size: 32px;
-  text-decoration: underline;
+    color: #90e0ef; /* azul claro = coherente con nav hover y footer link */
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
 }
 
-/* Contenedor del equipo */
-.equipo-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  padding: 20px;
-}
 
-/* Tarjeta de cada integrante */
-.integrante {
-  background-color: #ffffff;
-  border: 2px solid black;
-  border-radius: 8px;
-  width: 250px;
-  min-height: 300px;
-  text-align: center;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
-}
+@media (max-width: 768px) {
+    .equipo-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
 
-.integrante:hover {
-  transform: translateY(-5px);
-}
+    .integrante {
+        width: 80%;
+        max-width: 320px;
+    }
 
-/* Imagen circular del integrante */
-.integrante img {
-  border-radius: 100%;
-  width: 120px;
-  height: 120px;
-  margin-bottom: 15px;
-}
-
-/* Nombre y rol */
-.integrante h2 {
-  font-size: 22px;
-  color: #0077b6;
-  margin: 10px 0;
-}
-
-.integrante p {
-  font-size: 18px;
-  color: #03045e;
+    .equipo-titulo {
+        font-size: 28px;
+    }
 }
