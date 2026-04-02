@@ -5,7 +5,7 @@ Lucia Aguero
 Mateo Barrera ----hice la parte de contacto.html y estilo de la misma----
 
 
-Joaquin Pignotti
+Joaquin Pignotti ----hice la parte de equipo.html y estilo de la misma----
 
 
 Ricardo Herbas
