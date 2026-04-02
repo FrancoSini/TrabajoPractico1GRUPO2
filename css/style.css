@@ -225,3 +225,46 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* ===== FAQ ===== */
+
+.faq-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.faq-titulo {
+    text-align: center;
+    color: yellow;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Cada pregunta */
+.faq-item {
+    background-color: rgba(2, 62, 138, 0.85);
+    border: 2px solid #00b4d8;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover */
+.faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 180, 216, 0.5);
+    border-color: yellow;
+}
+
+/* Pregunta */
+.faq-item h3 {
+    color: yellow;
+    margin-bottom: 10px;
+}
+
+/* Respuesta */
+.faq-item p {
+    color: #90e0ef;
+    font-size: 16px;
+}
