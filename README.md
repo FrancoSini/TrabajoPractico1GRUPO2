@@ -8,7 +8,7 @@ Mateo Barrera ----hice la parte de contacto.html + faq.html  y estilo de la mism
 Joaquin Pignotti ----hice la parte de equipo.html y estilo de la misma----
 
 
-Ricardo Herbas
+Ricardo Herbas ----index.html y correcciones de estilos. ----
 
 
 Franco Sinigaglia
