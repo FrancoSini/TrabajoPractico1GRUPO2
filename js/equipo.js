@@ -18,7 +18,7 @@ try {
     div.innerHTML = `
         <img src="${integrante.img}" alt="Foto de ${integrante.nombre}">
         <h2>${integrante.nombre}</h2>
-        <p>${integrante.rol}</p>
+        <p>${integrante.descripcion}</p>
     `
     cardContainer.append(div)
     })
