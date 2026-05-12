@@ -11,7 +11,7 @@ async function perfil() {
     }
 
     // Pedir solo ese perfil al backend
-    const response = await fetch(`https://digital-factory.onrender.com/api/perfil/${id}`)
+    const response = await fetch(`https://digital-factory.onrender.com/perfil/${id}`)
     const perfil = await response.json()
     console.log(response)
     console.log(perfil)
@@ -22,11 +22,9 @@ async function perfil() {
     div.classList.add('card')
 
     div.innerHTML = `
-      <div class="card-img"><img src="${perfil.img}"/></div>
       <div class="card-saludo"><h2>${perfil.saludo}</h2></div>
       <div class="card-nombre"><p>${perfil.nombre}</p></div>
-      <div class="card-email"><p>${perfil.email}</p></div>
-      <div class="card-fnac"><p>${perfil.fnac}</p></div>
+      <div class="card-profesion"><p>${perfil.profesion}</p></div>
     `
     cardContainer.append(div)
   } catch (error) {
