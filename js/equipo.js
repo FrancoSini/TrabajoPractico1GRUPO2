@@ -3,7 +3,7 @@ const cardContainer = document.querySelector('#card-container')
 async function cargarEquipo() {
 try {
     // Pide los datos del equipo al backend
-    const response = await fetch('http://localhost:3000/api/equipo')
+    const response = await fetch('https://digital-factory.onrender.com/equipo')
     const integrantes = await response.json()
     console.log(response)
     console.log(integrantes)

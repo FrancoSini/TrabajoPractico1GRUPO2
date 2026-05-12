@@ -7,7 +7,7 @@ form.addEventListener('submit', async (e) => {
   const password = document.querySelector('#password').value
 
   try {
-    const response = await fetch('http://localhost:3000/api/login', {
+    const response = await fetch('https://digital-factory.onrender.com/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ usuario, password })
