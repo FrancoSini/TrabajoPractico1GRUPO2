@@ -11,7 +11,7 @@ async function perfil() {
     }
 
     // Pedir solo ese perfil al backend
-    const response = await fetch(`http://localhost:3000/api/perfil/${id}`)
+    const response = await fetch(`https://digital-factory.onrender.com/api/perfil/${id}`)
     const perfil = await response.json()
     console.log(response)
     console.log(perfil)
