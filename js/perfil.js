@@ -23,8 +23,8 @@ async function perfil() {
 
     div.innerHTML = `
       <div class="card-saludo"><h2>${perfil.saludo}</h2></div>
-      <div class="card-nombre"><p>${perfil.nombre}</p></div>
-      <div class="card-profesion"><p>${perfil.profesion}</p></div>
+      <div class="card-valor"><h2>${perfil.nombre}</h2></div>
+      <div class="card-description"><p>${perfil.profesion}</p></div>
     `
     cardContainer.append(div)
   } catch (error) {

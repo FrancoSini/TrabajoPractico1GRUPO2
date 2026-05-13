@@ -93,34 +93,40 @@
         font-size: 28px !important;
     }
 }
-/* pagina de servicios */
 
+/* pagina de servicios */
 #contenedor {
     text-align: center;
     width: 100%;
 }
 
 #card-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 20px;
+  justify-content: center;
+  margin: 30px auto;
+  width: 100%;              
 }
 
-
-.card{
-    width:250px;
-    min-height:200px;
-    border:2px solid black;
-    border-radius:8px;
-    padding:20px;
-    background-color:#ffffff;
-
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
+.card {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: border-color 0.3s ease;
 }
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 180, 216, 0.5);
+  border-color: yellow;
+}
+
 
 .card-img img{
     border-radius:100%;
@@ -129,15 +135,16 @@
 }
 
 
-.card-valor{
+.card-valor h2{
     margin-top:10px;
     text-decoration:underline;
+    color: blue;
 }
-.card-description {
+.card-description p{
     text-align:center;
-    
+    color: blue;
 }
-.card-description h3,
+
 
 .image-container{
     width:150px;
@@ -152,12 +159,6 @@
 }
 
 
-/* .imagen-fluida {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    
-} */
 /* header */
 header {
   background: linear-gradient(90deg, #0077b6, #00b4d8);
@@ -261,3 +262,19 @@ footer a:hover {
   text-decoration: underline;
 }
 
+button {
+  background-color: yellow;   
+  color: blue;                
+  border: none;               
+  padding: 10px 20px;         
+  border-radius: 6px;        
+  font-size: 16px;            
+  font-weight: bold;          
+  cursor: pointer;            
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f1c40f;  
+  color: #001f80;             
+}

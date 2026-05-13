@@ -15,8 +15,8 @@ async function servicios() {
 
       div.innerHTML = `
         <div class="card-img"> <img src="${servicio.img}"/></div>
-        <div class="card-valor"><h2>${servicio.precio}</h2></div>
-        <div class="card-descripcion"><p>${servicio.desc}</p></div>
+        <div class="card-valor"><h2>$${servicio.precio}</h2></div>
+        <div class="card-description"><p>${servicio.desc}</p></div>
       `
       cardContainer.append(div)
     })
