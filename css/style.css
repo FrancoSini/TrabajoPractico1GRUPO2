@@ -92,6 +92,26 @@
     .equipo-titulo {
         font-size: 28px !important;
     }
+
+    /* Servicios */
+    #card-container {
+      grid-template-columns: 1fr; 
+      gap: 15px;
+      padding: 10px;
+    }
+
+    .card {
+      width: 90%;        
+      max-width: 320px;  
+      margin: 0 auto;
+    }
+
+    /* Botones */
+    button {
+      width: 100%;       
+      font-size: 14px;   
+      padding: 8px 12px;
+    }
 }
 
 /* pagina de servicios */
