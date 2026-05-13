@@ -261,7 +261,7 @@ button:hover {
   color: #001f80;             
 }
 
-/* Responsive general */
+
 @media (max-width: 768px) {
   /* Inicio */
   #inicio {
